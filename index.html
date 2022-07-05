@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<title>New Project V2</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/styles.css">
+	<link rel="icon" type="image/x-icon" href="/resimler/unnamed.png">
+	<script>
+		function gizleGoster(ID) {
+		  var secilenID = document.getElementById(ID);
+		  if (secilenID.style.display == "none") {
+			secilenID.style.display = "";
+		  } else {
+			secilenID.style.display = "none";
+		  }
+		}
+		</script>
+		               <script> 
+						 function Toplama(){
+							 var s1=Number(document.getElementById("sayi1").value);
+							 var s2=Number(document.getElementById("sayi2").value);
+							 var sonuc=s1+s2;
+							 document.getElementById("kutuSonuc").innerHTML="Sonuç : "+sonuc;
+						 }
+						 
+						 function Cikarma(){
+							 var s1=Number(document.getElementById("sayi1").value);
+							 var s2=Number(document.getElementById("sayi2").value);
+							 var sonuc=s1-s2;
+							 document.getElementById("kutuSonuc").innerHTML="Sonuç : "+sonuc;
+						 }
+						 
+						 function Carpma(){
+							 var s1=Number(document.getElementById("sayi1").value);
+							 var s2=Number(document.getElementById("sayi2").value);
+							 var sonuc=s1*s2;
+							 document.getElementById("kutuSonuc").innerHTML="Sonuç : "+sonuc;
+						 }
+						 
+						 function Bolme(){
+							 var s1=Number(document.getElementById("sayi1").value);
+							 var s2=Number(document.getElementById("sayi2").value);
+							 var sonuc=s1/s2;
+							 document.getElementById("kutuSonuc").innerHTML="Sonuç : "+sonuc;
+						 }
+					 </script>
+</head>
+<body>
+<section>
+	<nav>
+		<h1>Yapmak istediğiniz seçenek nedir alttan belirtiniz.</h1>
+		<img src="/resimler/doga.jpg" alt="Bir doğa resmi.." width="300" height="150">
+		<ul>
+			<li><a href="/resimler/doga.jpg" download="doga_resmi.png">Yukarıdaki resmi indirmek istiyorsan buraya bas.</a></li>
+		</ul>
+	</nav>
+	<article>
+	  <h1 style="font-size:20px;"><b>Bilgilendirme;</b></h1>
+	  <p style="color:red; text-align:left">Bunun gibi kırmızı yazılar yazmak için <b>color<b> elementini kullanırız.</p>
+	  <h1 style="font-size:10px;">Yazıların <mark>büyüklüğünü/küçüklüğünü</mark> ayarlamak için <b>font-size</b> elementini kullanırız.</h1>
+	  <button onclick="gizleGoster('sonuc');">Adımı merak ediyorsan bu butona bas.</button>
+	  <p id="sonuc">Benim adım Baran.</p>
+	</article>
+  </section>
+	<aside>
+		<nav>
+			<ul>
+				<li><a href="index.html">Anasayfa</a></li>
+				<li><a href="resimler.html">Resimler</a></li>
+				<li><a href="javascript:window.close();">Çıkış &#128512;</a></li>
+				<li><a href="https://www.google.com.tr" target="_blank">Google'u yeni sekmede açarsınız.</a></li>
+				<li><a href="https://www.google.com/">Google'a gitmek için tıklayın.</a></li>
+			</ul>
+		</nav>
+	</aside>
+	<h1 style="color:white; text-align: left;">Hesap Makinesi</h1>
+	<form name="toplam">
+		<label>1. Sayı : </label>
+		<input type="text" id="sayi1"><br><br>
+		<label>2. Sayı : </label>
+		<input type="text" id="sayi2"><br><br>
+		<input type="button" id="btnTopla" value="TOPLA" onclick="Toplama()">
+		<input type="button" id="btnCikar" value="ÇIKAR" onclick="Cikarma()">
+		<input type="button" id="btnCarp" value="ÇARP" onclick="Carpma()">
+		<input type="button" id="btnBol" value="BÖL" onclick="Bolme()">
+	</form>
+	<div id="kutuSonuc"></div>
+	<div class="city">
+		<h2 class="city">Antalya</h2>
+		<p class="city">Antalya sıcak bir şehirdir.</p>
+	  </div>
+	  <footer><a href="https://github.com/aurixss" target="_blank">&copy; GitHub</a></footer>
+</body>
+</html>
