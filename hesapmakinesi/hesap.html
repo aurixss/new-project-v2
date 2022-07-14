@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8">
+        <title>Hesap Makinesi</title>
+        <link rel="stylesheet" href="style.css">
+		<script src="hmscript.js"></script>
+    </head>
+    <body>
+        <aside>
+			<div class="hamburger-menu">
+				<input id="menu__toggle" type="checkbox" />
+				<label class="menu__btn" for="menu__toggle">
+				  <span></span>
+				</label>
+				<ul class="menu__box">
+				  <li><a class="menu__item" href="/index.html">Anasayfa</a></li>
+						<li><a class="menu__item" href="/havadurumu/index.html">Hava Durumu</a></li>
+						<li><a class="menu__item" href="/giriş.html">Çıkış</a></li>
+				</ul>
+			  </div>
+        </aside>
+		<h1 style="color:white; text-align: left; text-align: center;">Hesap Makinesi</h1>
+		<form name="toplam">
+			<label>1. Sayı: </label>
+			<input type="text" id="sayi1"><br><br>
+			<label>2. Sayı: </label>
+			<input type="text" id="sayi2"><br><br>
+			<input type="button" id="btnTopla" value="TOPLA" onclick="Toplama()">
+			<input type="button" id="btnCikar" value="ÇIKAR" onclick="Cikarma()">
+			<input type="button" id="btnCarp" value="ÇARP" onclick="Carpma()">
+			<input type="button" id="btnBol" value="BÖL" onclick="Bolme()">
+		</form>
+		<div id="kutuSonuc"><b></b></div>
+    </body>
+</html>
