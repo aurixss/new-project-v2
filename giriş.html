@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script  src="girişscript.js"></script>
+    <link rel="stylesheet" href="girişcss.css">
+</head>
+    
+<body>
+
+<div id="back">
+  <div class="backRight"></div>
+  <div class="backLeft"></div>
+</div>
+
+<div id="slideBox">
+  <div class="topLayer">
+    <div class="left">
+      <div class="content">
+        <h2>Kayıt Ol</h2>
+        <form method="post" onsubmit="return false;">
+          <div class="form-group">
+            <input type="text" placeholder="Kullanıcı Adı" />
+            <input type="text" placeholder="Şifre" />
+          </div>
+          <div class="form-group"></div>
+          <div class="form-group"></div>
+          <div class="form-group"></div>
+        </form>
+        <button id="goLeft" class="off">Giriş</button>
+        <button>Kayıt Ol</button>
+      </div>
+    </div>
+    <div class="right">
+      <div class="content">
+        <h2>Giriş</h2>
+        <form method="post" onsubmit="return false;">
+          <div class="form-group">
+            <input type="text" placeholder="Kullanıcı Adı" />
+            <input type="text" placeholder="Şifre" />
+          </div>
+          <button id="goRight" class="off">Kayıt Ol</button>
+          <button id="login" type="submit" onclick="window.location.href='index.html'">Giriş</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div> 
+</body>
+</html>
